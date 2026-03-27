@@ -1,3 +1,11 @@
->>> from EmotionDetection import emotion_detector
->>> emotion_detector("I am Happy")
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am happy")
 {'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322, 'dominant_emotion': 'joy'}
+>>> emotion_detector("I am angry")
+{'anger': 0.97299534, 'disgust': 0.007920562, 'fear': 0.021403823, 'joy': 0.0111511685, 'sadness': 0.047718644, 'dominant_emotion': 'anger'}
+>>> emotion_detector("It is disgusting")
+{'anger': 0.09623807, 'disgust': 0.66896653, 'fear': 0.017898237, 'joy': 0.00929945, 'sadness': 0.06625184, 'dominant_emotion': 'disgust'}
+>>> emotion_detector("I am scared")
+{'anger': 0.006230379, 'disgust': 0.002425547, 'fear': 0.9887815, 'joy': 0.0034619593, 'sadness': 0.10541815, 'dominant_emotion': 'fear'}
+>>> emotion_detector("I am sad")
+{'anger': 0.0063314, 'disgust': 0.005223638, 'fear': 0.074054584, 'joy': 0.0046975184, 'sadness': 0.9819713, 'dominant_emotion': 'sadness'}
